@@ -1,0 +1,256 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+html,body{
+    height: 100%;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+}
+
+.navblock li{
+    padding: 0 25px 0 25px;
+}
+
+.navblock li:first-child{
+    padding: 0 25px 0 100px;
+}
+
+.navblock ul{
+    height: 100px;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 24px;
+}
+.navblock a{
+    color: #1EC82B;
+}
+.logospec{
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    border-bottom: #951DDA 5px solid;
+    border-top: #951DDA 5px solid;
+}
+/* .logotext:hover{
+    transform: scale(0.5);
+} */
+.logo{
+    transition: 0.5s;
+    /* overflow:hidden; */
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: url(../img/flowers.jpg) 0 0/cover no-repeat;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+.logotext{
+    position: absolute;
+    bottom: 30%;
+    /* font-style: italic;
+    display: table-cell; 
+    vertical-align: middle;  */
+    color: white;
+}
+/* .logotext:hover{
+    transform: scale(0.5);
+} */
+.logotext .first{
+    font-weight: 700;
+    padding: 0 0 0 90px;
+    font-size: 32px;
+}
+.logotext .second{
+    padding: 0 0 0 200px;
+    font-size: 18px;
+}
+main{
+    display: flex;
+    margin: 25px 90px 25px 90px;
+    flex: 1 1 auto;
+}
+.content{
+    width: 100%;
+}
+.aside_p1{
+    width: 300px;
+    margin: 0 0 20px 0;
+}
+.aside_p1 li{
+    padding: 0 0 15px 0;
+}
+.aside_p1 li::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #1EC82B;
+    display: inline-block;
+    margin: 0 10px 0 25px;
+}
+.logo1{
+    height: 50px;
+    background: url(../img/img04-removebg-preview.png) 0 0/100% 100% no-repeat;
+    margin: 0 0 15px 0;
+}
+.logo1 p{
+    color: white;
+    font-size: 24px;
+    line-height: 50px;
+    padding: 0 0 0 20px;
+}
+.aside_p1 a{
+    color: #1EC82B;
+}
+
+.aside_p2{
+    width: 300px;
+}
+.aside_p2 li{
+    padding: 0 0 15px 0;
+}
+.aside_p2 li::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #1EC82B;
+    display: inline-block;
+    margin: 0 10px 0 25px;
+}
+.logo2{
+    height: 50px;
+    background: url(../img/img04-removebg-preview.png) 0 0/100% 100% no-repeat;
+    margin: 0 0 15px 0;
+}
+.logo2 p{
+    color: white;
+    font-size: 24px;
+    line-height: 50px;
+    padding: 0 0 0 20px;
+}
+.aside_p2 a{
+    color: #1EC82B;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: #951DDA 5px solid;
+    margin: 0 0 5px 0;
+    height: 80px;
+    background: linear-gradient(#7FFC88, #1EC82B);
+}
+.footertext{
+    text-align: center;
+    color: white;
+}
+.footertext p{
+    font-size: 12px;
+}
+.content h1{
+    color: #1EC82B;
+    font-size: 36px;  
+    text-transform: capitalize;
+    padding: 0 0 20px 0;
+}
+.content a{
+    color: #1EC82B;
+}
+.content >p{
+    padding: 0 0 25px 0;
+}
+.content q{
+    padding: 0 0 25px 0;
+}
+.text1{
+    padding: 0 0 25px 0;
+}
+
+.list1 li::before{
+    content: '- ';
+}
+.text2{
+    padding: 25px 0 0 0;
+}
+.list2{
+    counter-reset: section; 
+    list-style-type: none;
+}
+.list2 li{
+    padding: 0 0 0 20px;
+}
+.list2 li::before{
+    counter-increment: section;
+    content: counters(section,".") ". ";
+}
+aside{
+    margin: 0 0 0 35px;
+}
+.par{
+    font-style: italic;
+    margin: 75px 0 0 50px;
+}
+.text2{
+    padding: 0 0 25px 0;
+}
+a{
+    position: relative;
+}
+.navblock a::before{
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #951DDA;
+    transition: 0.33s;
+    transform: scaleX(0);
+}
+.navblock a:hover::before{
+    transform: scaleX(1);
+}
